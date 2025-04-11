@@ -174,23 +174,11 @@
       const a13Value = getValueFromTable1("A13");
       const a12Value = getValueFromTable1("A12");
 
-      if (a5Value !== null && a20Value !== null) {
-        alphaValueCell.textContent = a5Value + a20Value;
-      } else {
-        alphaValueCell.textContent = "N/A";
-      }
+      alphaValueCell.textContent = a5Value + a20Value;
 
-      if (a15Value !== null && a7Value !== null && a7Value !== 0) {
-        betaValueCell.textContent = Math.floor(a15Value / a7Value);
-      } else {
-        betaValueCell.textContent = "N/A";
-      }
+      betaValueCell.textContent = Math.floor(a15Value / a7Value);
 
-      if (a13Value !== null && a12Value !== null) {
-        charlieValueCell.textContent = a13Value * a12Value;
-      } else {
-        charlieValueCell.textContent = "N/A";
-      }
+      charlieValueCell.textContent = a13Value * a12Value;
     </script>
   </body>
 </html>
